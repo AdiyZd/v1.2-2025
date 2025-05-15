@@ -1,0 +1,59 @@
+/* VARIABEL WARNA */
+:root {
+    --purple: #6a35ff;
+    --blue: #4285f4;
+    --pink: #ff4d8d;
+}
+
+/* KARTU EXPERIENCE */
+.exp-card {
+    background: rgba(255, 255, 255, 0.637);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 90%;
+    width: 90%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.exp-card-purple .exp-number { color: var(--purple); }
+.exp-card-blue .exp-number { color: var(--blue); }
+.exp-card-pink .exp-number { color: var(--pink); }
+
+.exp-card-purple .exp-icon svg { color: var(--purple); }
+.exp-card-blue .exp-icon svg { color: var(--blue); }
+.exp-card-pink .exp-icon svg { color: var(--pink); }
+
+.exp-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.exp-icon svg {
+    transition: transform 0.3s;
+}
+
+.exp-card:hover .exp-icon svg {
+    transform: scale(1.1);
+}
+
+/* ANIMASI ANGKA */
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.exp-number.animated {
+    animation: countUp 1s ease-out forwards;
+}
+
+.h5 {
+    color: #212529 !important;
+}

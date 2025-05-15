@@ -1,0 +1,1 @@
+console.log("js ini di pindah kan di animasi!")

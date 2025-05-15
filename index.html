@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fortopolio-2025</title>
     <!-- Dependensi-Bootstrap v5.3-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- Dependensi-font dari google-font POPINS -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> -->
     <!-- Dependensi-font dari google-font grotext -->
@@ -17,15 +17,17 @@
     <!-- Dependensi-font dari google-font inter -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"> -->
     <!-- Dependensi-font dari google-font poppins (clean & elegan)-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
     <!-- Dependensi-font dari google-font montserrat (Moderen & Profesional)-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
     <!-- Vanila css -->
-    <link rel="stylesheet" href="aset/css/main.css">
+    <link rel="stylesheet" href="aset/css/main.css" />
+    <link rel="stylesheet" href="aset/css/elementSizing.css" />
+    <link rel="stylesheet" href="aset/css/Experiend.css">
 </head>
 
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid px-5">
             <a class="navbar-brand" href="#">AdiyDev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,16 +37,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Features</a>
+                        <a class="nav-link active" aria-current="page" href="#Content">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                        <a class="nav-link active" aria-current="page" href="#">skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Disabled</a>
+                        <a class="nav-link active" aria-current="page" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-link nav-link" id="darkModeToggle">
@@ -56,22 +61,104 @@
         </div>
     </nav>
     <!-- content -->
-    <div class="container">
-        <div class="row">
+    <div class="container" id="Home">
+        <div class="row mt-5">
             <div class="col-12 col-md-6 text-center">
                 <!-- kolom 1 -->
                 <h1 class="nama mt-5">Hi, i'am <span id="nama">AdiyDev</span></h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nam accusamus fugit, molestias culpa autem accusantium sed odio praesentium eum.</p>
+                <br />
+                <h4 class="keahlian">Frontend developer | Teknisi komputer</h4>
+                <br />
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio
+                    debitis beatae fuga? Unde, labore! Dicta tempora corrupti ducimus,
+                    debitis accusantium minima fugit vitae sunt sapiente blanditiis
+                    tenetur corporis quasi, sequi pariatur laudantium! Libero explicabo
+                    voluptatum commodi! Enim, quibusdam dolor?
+                </p>
             </div>
             <div class="col-12 col-md-6 mt-5">
                 <!-- Kolom 2 -->
                 <div class="photo-wrapper">
-                    <img src="aset/img/1.png" alt="AdiyDev" class="profile-photo">
+                    <img src="aset/img/dev-1.png" alt="AdiyDev" class="profile-photo" />
                 </div>
             </div>
         </div>
     </div>
+    <!-- About-Me -->
+    <div class="container" id="About">
+        <h3 class="text-center" id="Content">About Me</h3>
+        <p class="abaout text-center">My Introduction</p>
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 mt-5">
+                <!-- Kolom 1 -->
+                <div class="profile-about">
+                    <img src="aset/img/dev-1.png" alt="AdiyDev" class="profile-about-photo" />
+                </div>
+            </div>
+            <div class="col-12 col-md-6" id="abaout-content">
+                <!-- Kolom 2 -->
+                <p class="text-center">
+                    "Teknisi komputer mengatasi kerusakan perangkat keras, instalasi
+                    sistem, dan optimasi performa komputer secara profesional." <br /> <br>
+                    "Frontend developer merancang tampilan web interaktif menggunakan
+                    HTML, CSS, JavaScript, Bootstrap."
+                </p>
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                        <!-- Item 1: Tahun Pengalaman -->
+                        <div class="col-md-4 mb-4">
+                            <div class="exp-card exp-card-purple text-center p-4 rounded-4 shadow-sm">
+                                <div class="exp-number" data-count="3">0</div>
+                                <div class="exp-icon mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm1-8.5V4a.5.5 0 0 0-1 0v3.5H5a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold h5">Tahun Pengalaman</h5>
+                                <p class="small text-muted">Frontend & Teknisi</p>
+                            </div>
+                        </div>
 
+                        <!-- Item 2: Proyek Selesai -->
+                        <div class="col-md-4 mb-4">
+                            <div class="exp-card exp-card-blue text-center p-4 rounded-4 shadow-sm">
+                                <div class="exp-number" data-count="150">0</div>
+                                <div class="exp-icon mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold h5">Proyek Selesai</h5>
+                                <p class="small text-muted">Website & Sistem</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Klien Puas -->
+                        <div class="col-md-4 mb-4">
+                            <div class="exp-card exp-card-pink text-center p-4 rounded-4 shadow-sm">
+                                <div class="exp-number" data-count="500">0</div> <!-- Diubah dari 5 ke 500 -->
+                                <div class="exp-icon mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold h5">Klien Puas</h5>
+                                <p class="small text-muted">Professional Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Dependensi-Bootsrtap v5.3-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
@@ -79,6 +166,8 @@
         crossorigin="anonymous"></script>
     <!-- Vanila Js -->
     <script src="aset/js/main.js"></script>
+    <script src="aset/js/animasiTuping.js"></script>
+    <script src="aset/js/hitungAnimasi.js"></script>
 </body>
 
 </html>

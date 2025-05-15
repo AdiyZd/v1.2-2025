@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    height: 1750px;
+}
+
 body.dark-mode {
     background-color: #212529 !important;
     color: #f8f9fa !important;
@@ -13,7 +24,7 @@ body.dark-mode {
     /* font-family: 'Space Grotesk', sans-serif; */
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     letter-spacing: 0.5px;
     background-color: transparent !important;
 }
@@ -63,6 +74,7 @@ body.dark-mode .navbar {
 .nav-link {
     transition: color 0.9s ease;
 }
+
 body {
     transition: background-color 0.9s ease, color 0.9s ease;
 }
@@ -85,7 +97,8 @@ body {
     margin: 0 0.5rem;
     position: relative;
     transition: color 0.3s ease, padding-bottom 0.3s ease;
-    padding-bottom: 0; /* Default tidak ada */
+    padding-bottom: 0;
+    /* Default tidak ada */
 }
 
 /* Garis bawah hanya untuk nav-link yang bukan darkModeToggle */
@@ -132,31 +145,93 @@ body.dark-mode .nav-link:not(#darkModeToggle):hover {
     font-weight: 700 !important;
 }
 
-/* STYLING CONTENT HALAMAN */
+/* ====================> STYLING CONTENT HALAMAN <==================== */
 .container {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500; 
+    font-weight: 500;
     letter-spacing: 0.5px;
     background-color: transparent !important;
 }
 
+/* KOLOM 1 */
+.nama {
+    font-weight: bold;
+    min-height: 60px;
+    font-size: 3rem;
+}
+
+.keahlian {
+    font-weight: 400;
+}
+
+#nama {
+    color: #6a35ff;
+    font-weight: bold;
+    min-height: 60px;
+    border-right: 2px solid #6a35ff;
+    padding-right: 4px;
+    animation: mengetik 0.75s step-end infinite;
+}
+
+@keyframes mengetik {
+    from, to { border-color: transparent;}
+    50% {border-color: #6a35ff;}
+}
+
 /* KOLOM 2 */
 .photo-wrapper {
-  border-radius: 48% 52% 53% 47% / 27% 29% 71% 73% !important;
-  background-color: #6a35ff; /* warna ungu */
-  width: 300px;
-  height: 298px;
-  border-radius: 50% / 40%; /* bikin elips/oval */
-  display: flex;
-  align-items: flex-end; /* posisi gambar ke bawah */
-  justify-content: center;
-  overflow: hidden;
-  margin: auto; /* biar di tengah */
+    cursor: pointer;
+    border-radius: 48% 52% 53% 47% / 27% 29% 71% 73% !important;
+    background-color: #6a35ff;
+    width: 300px;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
 }
 
 .profile-photo {
-    width: 85%;
-    height: 70%;
-    object-fit: cover; 
+    width: 70%;
+    height: 85%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* =========================> STYLING ABOUT ME <========================= */
+
+/* text-penunjuk arah */
+#Content {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+.abaout {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* KOLOM 1 */
+.profile-about {
+    background-color: #6a35ff;
+    border-radius: 89% 11% 92% 8% / 21% 71% 29% 79%  !important;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    cursor: pointer;
+}
+
+.profile-about-photo {
+    width: 70%;
+    height: 85%;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
