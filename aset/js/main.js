@@ -1,8 +1,13 @@
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
 const navbar = document.querySelector(".navbar");
-let collapse = document.getElementById("collapseExample");
-let arrowIcon = document.getElementById("arrowIcon");
+// setelan dropdown
+let collapseIDN = [
+  {collapseID: "CodeWebShow", icontId: "arrowIcon1"},
+  {collapseID: "TeknisiKomputer", icontId: "arrowIcon2"},
+  {collapseID: "collapseExample", icontId: "arrowIcon3"},
+  {collapseID: "BackendDev", icontId: "arrowIcon4"},
+];
 
 // cek preferensi dark mode
 const preferensiDark = window.matchMedia(
@@ -35,12 +40,19 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 // ini untuk drop down
-collapse.addEventListener("show.bs.collapse", () => {
-  arrowIcon.classList.remove("bi-chevron-down");
-  arrowIcon.classList.add("bi-chevron-up");
-});
+collapseIDN.forEach(({ collapseID, icontId }) => {
+  const collapse = document.getElementById(collapseID);
+  const icon = document.getElementById(icontId);
 
-collapse.addEventListener("hide.bs.collapse", () => {
-  arrowIcon.classList.remove("bi-chevron-up");
-  arrowIcon.classList.add("bi-chevron-down");
-});
+  if (collapse && icon) {
+    collapse.addEventListener("show.bs.collapse", () => {
+      icon.classList.remove("bi-chevron-down");
+      icon.classList.add("bi-chevron-up");
+    });
+
+    collapse.addEventListener("hide.bs.collapse", () => {
+      icon.classList.remove("bi-chevron-up");
+      icon.classList.add("bi-chevron-down");
+    });
+  }
+})
