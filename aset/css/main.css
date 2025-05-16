@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    height: 1750px;
+    height: 1800px;
 }
 
 body.dark-mode {
@@ -235,3 +235,36 @@ body.dark-mode .nav-link:not(#darkModeToggle):hover {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+
+/* =========================> STYLING SKILSS <========================= */
+/* KOLOM 1 */
+
+#kol1 {
+    cursor: pointer;
+}
+
+#Code {
+    font-weight: 500 !important;
+    font-size: 4rem;
+    color: #6a35ff;
+}
+
+.text-f {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px;
+}
+
+#k2 {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400 !important;
+    letter-spacing: 0.5px;
+    font-size: 0.90rem !important;
+    /* text-align: center; */
+}
+
+#arrowIcon {
+    font-size: 1.5rem !important;
+}
+
