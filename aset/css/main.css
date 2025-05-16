@@ -34,12 +34,16 @@ body.dark-mode {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 0.5px;
-    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.705) !important;
+    backdrop-filter: blur(5px);
+    color: black !important;
 }
 
 .navbar.dark-mode {
-    background-color: #212529 !important;
-    color: #f8f9fa !important;
+    background-color: rgba(18, 18, 18, 0.8) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-link:hover {
@@ -64,7 +68,7 @@ body:not(.dark-mode) .navbar {
 }
 
 body.dark-mode .navbar {
-    --navbar-color: rgba(255, 255, 255, 0.9);
+    color: #212529 !important;
 }
 
 .navbar-brand,
@@ -146,7 +150,7 @@ body.dark-mode .nav-link:not(#darkModeToggle).active::after {
 }
 
 body.dark-mode .nav-link:not(#darkModeToggle):hover {
-    color: #6a35ff !important;
+    color: #a78bfa !important;
 }
 
 .nav-link.active {
@@ -416,4 +420,45 @@ body.dark-mode .nav-link:not(#darkModeToggle):hover {
 
 #message {
     height: 150px;
+}
+
+/* =========================> STYLING FOOTER <========================= */
+.custom-footer {
+    background-color: rgba(255, 255, 255, 0.705) !important;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: black !important;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #6a35ff;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #6a35ff;
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #666;
 }
