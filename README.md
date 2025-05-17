@@ -1,5 +1,5 @@
 # web preview
 ---
-## [DOKUMENTASI]()
+## [DOKUMENTASI](https://adiyzd.github.io/v1.2-2025/)
 
 ---
