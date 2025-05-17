@@ -117,5 +117,3 @@ document.getElementById('It').addEventListener('click', function(end) {
     }, 500);
 })
 
-
-console.log("VITUR WHATSAPP BERJALAN");

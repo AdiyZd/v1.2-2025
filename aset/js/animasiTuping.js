@@ -23,7 +23,6 @@ function typing() {
     setTimeout(typing, berhenti);
   }
 }
-console.log("ANIMASI TEXT BERJALAN SEDANG BERJALAN");
 
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
