@@ -357,6 +357,17 @@ body.dark-mode .nav-link:not(#darkModeToggle):hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* [id] {
+  scroll-margin-top: 80px !important;
+} */
+
+.service-card.hovered,
+.service-card.hover1 {
+    transform: translateY(-20px);
+    box-shadow: 0 17px 40px #6b11cb8c;
+}
+
+
 .card-icon {
     font-size: 3rem;
     margin-bottom: 20px;
