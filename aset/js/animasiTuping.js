@@ -2,13 +2,11 @@ const text = "Agus Adi Purnomo.";
 const element = document.getElementById("nama");
 let i = 0;
 let menghapus = false;
-const kecepatanKetik = 150;
-const kecepatanMenghapus = 75;
-const berhenti = 2000;
+const kecepatanKetik = 100;
+const kecepatanMenghapus = 65;
+const berhenti = 4000;
 
 function typing() {
-  const ambilText = element.innerHTML;
-
   if (!menghapus && i < text.length) {
     // mengetik
     element.innerHTML = text.substring(0, i + 1);
@@ -25,8 +23,10 @@ function typing() {
     setTimeout(typing, berhenti);
   }
 }
+console.log("ANIMASI TEXT BERJALAN SEDANG BERJALAN");
 
 document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
   typing();
 
   const counters = document.querySelectorAll(".exp-number");

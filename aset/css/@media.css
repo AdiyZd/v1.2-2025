@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+    [id^="arrowIcon"] {
+        display: none !important;
+    }
+    [id^="text-f"] {
+        font-size: 1rem !important;
+    }
+    [id^="k2"] {
+        font-size: 2px !important;
+    }
+    [class^="skill-percent"] {
+        font-size: 0.75rem !important;
+    }
+    [class^="skill-name"] {
+        font-size: 0.60rem !important;
+    }
+  }

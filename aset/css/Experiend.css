@@ -1,4 +1,3 @@
-/* VARIABEL WARNA */
 :root {
     --purple: #6a35ff;
     --blue: #4285f4;
@@ -8,32 +7,47 @@
 /* KARTU EXPERIENCE */
 .exp-card {
     background: rgba(255, 255, 255, 0.637);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    height: 90%;
-    width: 90%;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, 
+                rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+                rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    height: 100%;
 }
 
 .exp-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
-.exp-card-purple .exp-number { color: var(--purple); }
-.exp-card-blue .exp-number { color: var(--blue); }
-.exp-card-pink .exp-number { color: var(--pink); }
+/* Warna Khusus Tiap Kartu */
+.exp-card-purple .exp-number,
+.exp-card-purple .exp-icon svg {
+    color: var(--purple);
+}
 
-.exp-card-purple .exp-icon svg { color: var(--purple); }
-.exp-card-blue .exp-icon svg { color: var(--blue); }
-.exp-card-pink .exp-icon svg { color: var(--pink); }
+.exp-card-blue .exp-number,
+.exp-card-blue .exp-icon svg {
+    color: var(--blue);
+}
 
+.exp-card-pink .exp-number,
+.exp-card-pink .exp-icon svg {
+    color: var(--pink);
+}
+
+/* Angka Utama */
 .exp-number {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1;
     margin: 10px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Icon SVG */
+.exp-icon {
+    margin-bottom: 15px;
 }
 
 .exp-icon svg {
@@ -44,7 +58,7 @@
     transform: scale(1.1);
 }
 
-/* ANIMASI ANGKA */
+/* Animasi Angka Naik */
 @keyframes countUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -54,6 +68,7 @@
     animation: countUp 1s ease-out forwards;
 }
 
+/* Heading */
 .h5 {
     color: #212529 !important;
 }
