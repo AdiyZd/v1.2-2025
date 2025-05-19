@@ -475,3 +475,9 @@ body.dark-mode .nav-link:not(#darkModeToggle):hover {
     font-size: 0.9rem;
     color: #666;
 }
+
+
+/* AOS */
+#About.aos-animate {
+  opacity: 1 !important;
+}

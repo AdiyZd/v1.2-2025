@@ -22,27 +22,6 @@ const URL = `https://wa.me/${target}?text=${encode}`;
 
 ElementIdLink.href = URL;
 
-// INI REDIRECT HOVER CARD
-
-// webdev
-// document.getElementById("webdev").addEventListener("click", function (j) {
-//   j.preventDefault();
-
-//   document.getElementById("Service").scrollIntoView({
-//     behavior: "smooth",
-//     block: "start",
-//   });
-
-//   setTimeout(() => {
-//     const CardHover = document.getElementById("web-dev");
-//     CardHover.classList.add("hover1");
-
-//     setTimeout(() => {
-//       CardHover.classList.remove("hover1");
-//     }, 3000); 
-//   }, 1000);
-// });
-
 // webdev
 function ScrollAnimasi(Rtarget) {
     document.getElementById('Service').scrollIntoView({

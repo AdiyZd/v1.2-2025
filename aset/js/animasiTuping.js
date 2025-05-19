@@ -25,10 +25,7 @@ function typing() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  AOS.init({
-    once: true, // hanya sekali saat scroll
-  });
-  
+  AOS.init();
   typing();
 
   const counters = document.querySelectorAll(".exp-number");
